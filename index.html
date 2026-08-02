@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Психологическая поддержка: индивидуальные консультации очно и онлайн."
+    />
+    <title>Анна Соколова — психолог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top">Анна Соколова</a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="header-cta" href="#contact">Записаться</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="Спокойное освещённое пространство"></div>
+        <div class="hero-content">
+          <p class="brand">Анна Соколова</p>
+          <h1 id="hero-title">Пространство, где можно быть собой</h1>
+          <p class="hero-lead">
+            Психологические консультации для взрослых — бережно, структурно и без спешки.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Записаться на сессию</a>
+            <a class="btn btn-ghost" href="#about">Узнать подробнее</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-inner">
+          <p class="eyebrow">Обо мне</p>
+          <h2 id="about-title">Работаю с тревогой, выгоранием и отношениями</h2>
+          <p class="section-text">
+            Это текст-заглушка. Здесь будет короткое представление: подход, образование и то, как
+            обычно проходит первая встреча. Можно заменить на ваш реальный опыт и тон общения.
+          </p>
+          <ul class="facts">
+            <li><span>8+</span> лет практики</li>
+            <li><span>онлайн</span> и очно</li>
+            <li><span>50 мин</span> сессия</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="section-inner">
+          <p class="eyebrow">Услуги</p>
+          <h2 id="services-title">С чем можно обратиться</h2>
+          <p class="section-text">
+            Список ниже — пример. Замените пункты на ваши реальные направления работы.
+          </p>
+          <ul class="service-list">
+            <li>
+              <h3>Индивидуальные консультации</h3>
+              <p>Тревога, самооценка, жизненные переходы, поиск опоры в себе.</p>
+            </li>
+            <li>
+              <h3>Эмоциональное выгорание</h3>
+              <p>Усталость, потеря смысла, восстановление ритма и границ.</p>
+            </li>
+            <li>
+              <h3>Отношения и коммуникация</h3>
+              <p>Конфликты, близость, сложные разговоры и паттерны в общении.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner">
+          <p class="eyebrow">Контакты</p>
+          <h2 id="contact-title">Давайте начнём с короткого знакомства</h2>
+          <p class="section-text">
+            Напишите в удобный мессенджер — отвечу и предложу время для первой встречи.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
+            <a class="btn btn-ghost" href="https://t.me/" target="_blank" rel="noreferrer"
+              >Telegram</a
+            >
+            <a class="btn btn-ghost" href="https://wa.me/" target="_blank" rel="noreferrer"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Анна Соколова. Сайт-визитка.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
