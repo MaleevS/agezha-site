@@ -1,26 +1,54 @@
-# site-vizitka-psy
+# agezha-site
 
-Одностраничная сайт-визитка психолога (заглушка).
+Official website of psychologist Alexandra Gezha.
 
-## Локальный просмотр
+## Local development
 
-Откройте `index.html` в браузере или запустите простой сервер:
+Run a simple local server:
 
 ```bash
+
 python3 -m http.server 5173
+
 ```
 
-Сайт будет на http://localhost:5173
+Then open:
 
-## Деплой на Vercel
+[http://localhost:5173](http://localhost:5173)
 
-1. Создайте репозиторий на GitHub и запушьте этот проект.
-2. На [vercel.com](https://vercel.com) импортируйте репозиторий.
-3. Framework Preset: **Other** — деплой статики без сборки.
-4. При необходимости добавьте свой домен в Settings → Domains.
+## Deployment
 
-## Что заменить
+The site is deployed automatically from GitHub via Cloudflare Pages.
 
-- Имя, тексты и контакты в `index.html`
-- Фото героя (сейчас Unsplash) — на своё изображение в папке проекта
-- Цвета и шрифты в `styles.css`
+## Project
+
+- `index.html` — page markup
+
+- `styles.css` — styles# agezha-site
+
+Official website of psychologist Alexandra Gezha.
+
+## Local development
+
+Run a simple local server:
+
+```bash
+
+python3 -m http.server 5173
+
+```
+
+Then open:
+
+[http://localhost:5173](http://localhost:5173)
+
+## Deployment
+
+The site is deployed automatically from GitHub via Cloudflare Pages.
+
+## Project
+
+- `index.html` — page markup
+
+- `styles.css` — styles
+
