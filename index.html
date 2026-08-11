@@ -5,110 +5,568 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Психологическая поддержка: индивидуальные консультации очно и онлайн."
+      content="Психолог и гештальт-терапевт Александра Гежа: индивидуальные, семейные и парные консультации онлайн и очно в Москве."
     />
-    <title>Анна Соколова — психолог</title>
+    <meta name="theme-color" content="#fbfaf7" />
+    <title>Александра Гежа — психолог, гештальт-терапевт в Москве и онлайн</title>
+    <link rel="canonical" href="https://agezha.ru/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:url" content="https://agezha.ru/" />
+    <meta
+      property="og:title"
+      content="Александра Гежа — психолог, гештальт-терапевт в Москве и онлайн"
+    />
+    <meta
+      property="og:description"
+      content="Психолог и гештальт-терапевт Александра Гежа: индивидуальные, семейные и парные консультации онлайн и очно в Москве."
+    />
+    <meta property="og:image" content="https://agezha.ru/images/alexandra-hero.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
     <header class="site-header">
-      <a class="logo" href="#top">Анна Соколова</a>
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#about">Обо мне</a>
-        <a href="#services">Услуги</a>
-        <a href="#contact">Контакты</a>
-      </nav>
-      <a class="header-cta" href="#contact">Записаться</a>
+      <div class="header-inner">
+        <a class="logo" href="#top">
+          <span>Александра</span>
+          <span>Гежа</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          id="menu-toggle"
+        >
+          <span class="menu-toggle-bars" aria-hidden="true"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Основная навигация">
+          <a href="#requests">С чем можно прийти</a>
+          <a href="#approach">Как я работаю</a>
+          <a href="#pricing">Стоимость</a>
+          <a href="#about">Обо мне</a>
+          <a href="#faq">Вопросы</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+
+        <a class="header-cta" href="#contact">Связаться</a>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" role="img" aria-label="Спокойное освещённое пространство"></div>
-        <div class="hero-content">
-          <p class="brand">Александра Гежа</p>
-          <h1 id="hero-title">Пространство, где можно быть собой</h1>
-          <p class="hero-lead">
-            Психологические консультации для взрослых — бережно, структурно и без спешки.
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-brand">Александра Гежа</p>
+            <p class="hero-role">Психолог, гештальт-терапевт</p>
+            <h1 id="hero-title">
+              Здесь можно остановиться, прислушаться к себе и понять, куда двигаться дальше
+            </h1>
+            <p class="hero-lead">
+              Если трудно в отношениях, проживается утрата, потерян ориентир или кажется, что жизнь
+              идёт не по вашему сценарию — на встречах будем исследовать это вместе.
+            </p>
+            <p class="hero-meta">Онлайн и очно в Москве.</p>
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://t.me/Alyonok"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Написать в Telegram</a
+              >
+              <a class="btn btn-secondary" href="tel:+79266257173">Позвонить</a>
+            </div>
+          </div>
+
+          <figure class="hero-photo">
+            <img
+              src="images/alexandra-hero.jpg"
+              alt="Психолог Александра Гежа"
+              width="1289"
+              height="1600"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="requests" aria-labelledby="requests-title">
+        <div class="section-inner">
+          <h2 id="requests-title">С чем можно прийти</h2>
+          <p class="section-lead">
+            Не обязательно заранее точно понимать, что с вами происходит. Иногда достаточно
+            ощущения: «Мне сложно, но я пока не знаю почему».
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Записаться на сессию</a>
-            <a class="btn btn-ghost" href="#about">Узнать подробнее</a>
+
+          <ul class="card-grid card-grid-3">
+            <li class="card">
+              <h3>Тревога и страх</h3>
+              <p>
+                Бессонница, беспокойство о будущем, страх перемен, отношений или выхода на работу.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Тоска и утрата</h3>
+              <p>
+                Когда трудно отпустить прошлое, бывшие отношения или детство; когда кажется, что
+                впереди нет хорошего.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Кризисы и потерянность</h3>
+              <p>
+                Чувство безвыходности, отсутствие опоры, понимания себя и того, куда двигаться
+                дальше.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Повторяющиеся сценарии</h3>
+              <p>
+                Когда снова и снова возникают похожие болезненные отношения, выборы или ситуации.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Неопределённость и выбор</h3>
+              <p>
+                Когда неясно, чем заниматься, чего хотеть, на чём сфокусироваться и как начать
+                движение.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Отношения</h3>
+              <p>
+                Любовные, семейные, дружеские и партнёрские отношения; кризисы, непонимание,
+                созависимость и детско-родительские конфликты.
+              </p>
+            </li>
+          </ul>
+
+          <p class="after-cards">Если не нашли свой запрос — можно написать мне и обсудить его.</p>
+
+          <aside class="note-panel" aria-labelledby="limits-title">
+            <h3 id="limits-title">Важно знать</h3>
+            <p>Есть ситуации, в которых требуется помощь специалиста другого профиля. Я не работаю:</p>
+            <ul>
+              <li>с детьми младше 15 лет и людьми пожилого возраста;</li>
+              <li>с эндогенными депрессиями;</li>
+              <li>с острыми психическими состояниями;</li>
+              <li>с приступами ярости и агрессии;</li>
+              <li>с сексуальными расстройствами;</li>
+              <li>
+                с алкогольными и химическими зависимостями, а также с игроманией.
+              </li>
+            </ul>
+            <p>
+              Если во время знакомства выяснится, что ваш запрос находится за пределами моей
+              компетенции, я честно скажу об этом и бережно помогу сориентироваться, к какому
+              специалисту лучше обратиться.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="approach" aria-labelledby="approach-title">
+        <div class="section-inner">
+          <h2 id="approach-title">Как я работаю</h2>
+          <p class="section-lead">
+            Психотерапия — не волшебная таблетка и не способ стать «правильным». Это пространство, в
+            котором можно внимательнее увидеть себя, свои чувства, потребности и жизненные истории.
+          </p>
+
+          <ul class="card-grid card-grid-3">
+            <li class="card">
+              <h3>Без переделывания и спасательства</h3>
+              <p>
+                Я не ставлю диагнозы, не лечу и не даю готовых рецептов. Не пытаюсь переделать или
+                «исправить» человека. Если нужна врачебная помощь, бережно помогу сориентироваться и
+                обратиться к подходящему специалисту.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Ясно и по договорённости</h3>
+              <p>
+                Мне важно, чтобы в работе было достаточно прозрачности: мы обсуждаем формат, границы
+                и всё, что вызывает вопросы. Доверие строится там, где можно говорить честно и быть
+                услышанным.
+              </p>
+            </li>
+            <li class="card">
+              <h3>С вниманием к живому</h3>
+              <p>
+                Для меня важно то, что происходит с вами здесь и сейчас. Можно не торопиться, не
+                быть сильным и не подбирать «правильные» слова. Вместе мы будем распутывать
+                непростые жизненные истории, возвращать опору и честный диалог с собой.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="pricing" aria-labelledby="pricing-title">
+        <div class="section-inner">
+          <h2 id="pricing-title">Формат и стоимость</h2>
+          <p class="section-lead">
+            Встречи проходят онлайн и очно в Москве. Продолжительность одной сессии — 55 минут.
+          </p>
+
+          <ul class="card-grid card-grid-3">
+            <li class="card price-card">
+              <h3>Индивидуальная консультация онлайн</h3>
+              <p class="price">4 000 ₽</p>
+              <p>Встреча в удобном для вас онлайн-формате.</p>
+            </li>
+            <li class="card price-card">
+              <h3>Индивидуальная консультация очно</h3>
+              <p class="price">4 000 ₽</p>
+              <p>Москва, «Международная Академия Гештальта» (МАГ).</p>
+            </li>
+            <li class="card price-card">
+              <h3>Семейная и парная консультация</h3>
+              <p class="price">6 000 ₽</p>
+              <p>Работа с отношениями, конфликтами, кризисами и поиском взаимопонимания.</p>
+            </li>
+          </ul>
+
+          <p class="pricing-note">
+            Если вам нужно отменить очную встречу, пожалуйста, сообщите об этом не позднее чем за 24
+            часа. При отмене менее чем за 24 часа удерживается стоимость аренды кабинета.
+          </p>
+
+          <figure class="office-photo">
+            <img
+              src="images/office.jpg"
+              alt="Кабинет для очных консультаций в Международной Академии Гештальта"
+              width="1800"
+              height="1004"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              Очные встречи проходят в «Международной Академии Гештальта» в Москве.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="about" aria-labelledby="about-title">
+        <div class="section-inner section-inner-narrow">
+          <h2 id="about-title">Обо мне</h2>
+          <div class="about-text">
+            <p>
+              Моё главное увлечение в жизни — это человек и его разнообразный внутренний мир. Мне
+              всегда было интересно, как устроена я сама и другой человек напротив меня. Именно так
+              я пришла в мир психологии. А мой богатый жизненный опыт и интересная, насыщенная жизнь
+              позволили изучать совершенно разных людей в самых неожиданных жизненных
+              обстоятельствах.
+            </p>
+            <p class="about-highlight">Веду частную психологическую практику с 2021 года.</p>
+            <p>
+              По первому образованию я социолог. Окончила вуз с красным дипломом, затем аспирантуру
+              и написала диссертацию на тему «Динамика социальных ценностей поколения 90-х годов XX
+              века».
+            </p>
+            <p>
+              Позже получила профессиональную переподготовку по психологическому консультированию.
+              Закончила первую ступень гештальт-терапии в «Институте современной гештальт-терапии»,
+              а сейчас заканчиваю вторую ступень в «Международной Академии Гештальта».
+            </p>
+            <p>
+              Также прошла двухгодичный курс «Характерологический семинар О.М. Суса. Теория 12
+              психотипов».
+            </p>
+            <p>
+              Параллельно было множество конференций, семинаров, терапевтических групп, личной
+              терапии и супервизий. И по-прежнему у меня много планов по дальнейшему развитию,
+              потому что остановиться в психологии невозможно!
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section about" id="about" aria-labelledby="about-title">
-        <div class="section-inner">
-          <p class="eyebrow">Обо мне</p>
-          <h2 id="about-title">Работаю с тревогой, выгоранием и отношениями</h2>
-          <p class="section-text">
-            Это текст-заглушка. Здесь будет короткое представление: подход, образование и то, как
-            обычно проходит первая встреча. Можно заменить на ваш реальный опыт и тон общения.
-          </p>
-          <ul class="facts">
-            <li><span>8+</span> лет практики</li>
-            <li><span>онлайн</span> и очно</li>
-            <li><span>50 мин</span> сессия</li>
-          </ul>
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="section-inner section-inner-narrow">
+          <h2 id="faq-title">Вопросы перед первой встречей</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-trigger-1"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-1"
+                >
+                  <span>Что делать, если я не могу сформулировать запрос?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="faq-panel"
+                id="faq-panel-1"
+                role="region"
+                aria-labelledby="faq-trigger-1"
+                hidden
+              >
+                <p>
+                  Необязательно заранее точно понимать, что с вами происходит, и подбирать
+                  правильные слова. Можно начать с того, что беспокоит сейчас, даже если это пока
+                  только смутное ощущение.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-trigger-2"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-2"
+                >
+                  <span>Как проходит первая встреча?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="faq-panel"
+                id="faq-panel-2"
+                role="region"
+                aria-labelledby="faq-trigger-2"
+                hidden
+              >
+                <p>
+                  Мы знакомимся и говорим о том, что привело вас в терапию. Вы рассказываете столько,
+                  сколько готовы рассказать. Вместе обсуждаем ваши ожидания и договариваемся о
+                  дальнейшем формате работы.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-trigger-3"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-3"
+                >
+                  <span>Вы будете давать мне советы?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="faq-panel"
+                id="faq-panel-3"
+                role="region"
+                aria-labelledby="faq-trigger-3"
+                hidden
+              >
+                <p>
+                  Я не выдаю готовых решений и не решаю за человека, как ему жить. Мы вместе
+                  исследуем происходящее, чтобы вы могли лучше понимать себя, свои чувства и
+                  принимать собственные решения.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-trigger-4"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-4"
+                >
+                  <span>Что будет, если мне потребуется помощь врача?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="faq-panel"
+                id="faq-panel-4"
+                role="region"
+                aria-labelledby="faq-trigger-4"
+                hidden
+              >
+                <p>
+                  Я не ставлю диагнозы и не назначаю лечение. Если увижу, что для вашего состояния
+                  нужна врачебная помощь или специалист другого профиля, честно и бережно скажу об
+                  этом и помогу сориентироваться.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section services" id="services" aria-labelledby="services-title">
+      <section class="section section-alt" id="contact" aria-labelledby="contact-title">
         <div class="section-inner">
-          <p class="eyebrow">Услуги</p>
-          <h2 id="services-title">С чем можно обратиться</h2>
-          <p class="section-text">
-            Список ниже — пример. Замените пункты на ваши реальные направления работы.
+          <h2 id="contact-title">Контакты</h2>
+          <p class="section-lead">
+            Если вы хотите записаться на консультацию или задать вопрос, напишите мне в Telegram или
+            позвоните.
           </p>
-          <ul class="service-list">
-            <li>
-              <h3>Индивидуальные консультации</h3>
-              <p>Тревога, самооценка, жизненные переходы, поиск опоры в себе.</p>
-            </li>
-            <li>
-              <h3>Эмоциональное выгорание</h3>
-              <p>Усталость, потеря смысла, восстановление ритма и границ.</p>
-            </li>
-            <li>
-              <h3>Отношения и коммуникация</h3>
-              <p>Конфликты, близость, сложные разговоры и паттерны в общении.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
-        <div class="section-inner">
-          <p class="eyebrow">Контакты</p>
-          <h2 id="contact-title">Давайте начнём с короткого знакомства</h2>
-          <p class="section-text">
-            Напишите в удобный мессенджер — отвечу и предложу время для первой встречи.
-          </p>
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
-            <a class="btn btn-ghost" href="https://t.me/" target="_blank" rel="noreferrer"
-              >Telegram</a
-            >
-            <a class="btn btn-ghost" href="https://wa.me/" target="_blank" rel="noreferrer"
-              >WhatsApp</a
-            >
+          <div class="contact-layout">
+            <div class="contact-info">
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Telegram</span>
+                  <a
+                    href="https://t.me/Alyonok"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@Alyonok</a
+                  >
+                </li>
+                <li>
+                  <span class="contact-label">Телефон</span>
+                  <a href="tel:+79266257173">+7 926 625-71-73</a>
+                </li>
+              </ul>
+
+              <div class="contact-address">
+                <h3>Очные встречи</h3>
+                <p>
+                  Москва, «Международная Академия Гештальта» (МАГ)<br />
+                  1-й Спасоналивковский переулок, 8, стр. 1<br />
+                  Метро «Полянка» или «Октябрьская»
+                </p>
+              </div>
+
+              <div class="contact-actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://t.me/Alyonok"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Написать в Telegram</a
+                >
+                <a class="btn btn-secondary" href="tel:+79266257173">Позвонить</a>
+                <a
+                  class="btn btn-secondary"
+                  href="https://yandex.ru/maps/-/CTSLvL56"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Построить маршрут</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-map">
+              <iframe
+                class="map-frame"
+                src="https://yandex.ru/map-widget/v1/?ll=37.617179%2C55.733111&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=37.616929%2C55.733274&whatshere%5Bzoom%5D=16&z=18"
+                title="Международная Академия Гештальта на карте Москвы"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+              <p class="map-fallback">
+                <a
+                  href="https://yandex.ru/maps/-/CTSLvL56"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Открыть адрес на Яндекс Картах</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Анна Соколова. Сайт-визитка.</p>
+      <div class="footer-inner">
+        <p>© <span id="year">2026</span> Александра Гежа</p>
+      </div>
     </footer>
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) {
+          yearEl.textContent = String(new Date().getFullYear());
+        }
+
+        var header = document.querySelector(".site-header");
+        var toggle = document.getElementById("menu-toggle");
+        var nav = document.getElementById("site-nav");
+        var navLinks = nav ? nav.querySelectorAll("a") : [];
+
+        function setMenuOpen(isOpen) {
+          if (!toggle || !nav || !header) return;
+          header.classList.toggle("is-menu-open", isOpen);
+          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          toggle.querySelector(".visually-hidden").textContent = isOpen
+            ? "Закрыть меню"
+            : "Открыть меню";
+        }
+
+        function closeMenu() {
+          setMenuOpen(false);
+        }
+
+        if (toggle && nav) {
+          toggle.addEventListener("click", function () {
+            var open = toggle.getAttribute("aria-expanded") === "true";
+            setMenuOpen(!open);
+          });
+
+          navLinks.forEach(function (link) {
+            link.addEventListener("click", closeMenu);
+          });
+
+          document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+              closeMenu();
+            }
+          });
+        }
+
+        var faqTriggers = document.querySelectorAll(".faq-trigger");
+
+        faqTriggers.forEach(function (trigger) {
+          trigger.addEventListener("click", function () {
+            var expanded = trigger.getAttribute("aria-expanded") === "true";
+            var panelId = trigger.getAttribute("aria-controls");
+            var panel = panelId ? document.getElementById(panelId) : null;
+
+            faqTriggers.forEach(function (other) {
+              var otherPanelId = other.getAttribute("aria-controls");
+              var otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+              other.setAttribute("aria-expanded", "false");
+              if (otherPanel) {
+                otherPanel.hidden = true;
+              }
+            });
+
+            if (!expanded && panel) {
+              trigger.setAttribute("aria-expanded", "true");
+              panel.hidden = false;
+            }
+          });
+        });
+      })();
     </script>
   </body>
 </html>
