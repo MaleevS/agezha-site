@@ -16,7 +16,7 @@ Then open:
 
 ## Deployment
 
-The site is deployed automatically from GitHub via Cloudflare Pages.
+The site is deployed automatically from GitHub via Timeweb Cloud.
 
 ## Project
 
