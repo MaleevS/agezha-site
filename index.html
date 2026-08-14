@@ -31,6 +31,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="analytics.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -498,8 +499,41 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <p>© <span id="year">2026</span> Александра Гежа</p>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          <li>
+            <a href="#analytics-consent" data-analytics-settings>Настройки статистики</a>
+          </li>
+        </ul>
       </div>
     </footer>
+
+    <div
+      class="analytics-consent"
+      id="analytics-consent"
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="analytics-consent-title"
+      aria-describedby="analytics-consent-text"
+      hidden
+    >
+      <div class="analytics-consent-inner">
+        <p class="visually-hidden" id="analytics-consent-title">Настройки статистики</p>
+        <p class="analytics-consent-text" id="analytics-consent-text">
+          Мы используем обезличенную статистику, чтобы понимать, какие разделы сайта полезны
+          посетителям.
+          <a href="privacy.html">Подробнее</a>
+        </p>
+        <div class="analytics-consent-actions">
+          <button type="button" class="analytics-btn analytics-btn-allow" id="analytics-allow">
+            Разрешить
+          </button>
+          <button type="button" class="analytics-btn analytics-btn-deny" id="analytics-deny">
+            Только необходимые
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script>
       (function () {
@@ -568,5 +602,6 @@
         });
       })();
     </script>
+    <script src="analytics.js" defer></script>
   </body>
 </html>

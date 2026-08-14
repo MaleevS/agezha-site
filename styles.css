@@ -480,6 +480,17 @@ a:hover {
   font-size: 1.05rem;
 }
 
+.about-text ul {
+  margin: 0 0 1.15rem;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.about-text li + li {
+  margin-top: 0.35rem;
+}
+
 .about-text p:last-child {
   margin-bottom: 0;
 }
