@@ -18,6 +18,16 @@ Then open:
 
 The site is deployed automatically from GitHub via Timeweb Cloud.
 
+## Рабочий процесс
+
+Пользователь → Codex → Git → GitHub → Timeweb Cloud → agezha.ru
+
+- Codex изменяет и проверяет файлы сайта.
+- Git хранит историю изменений.
+- GitHub хранит удалённый репозиторий.
+- Timeweb Cloud автоматически получает изменения из ветки `main` и публикует сайт.
+- Cloudflare и Cursor в текущем процессе не используются.
+
 ## Project
 
 - `index.html` — page markup
